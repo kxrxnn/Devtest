@@ -1,0 +1,16 @@
+<!-- file_upload/templates/home.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h1>Uploaded File Data</h1>
+    <div>
+        {{ data_html|safe }}  <!-- Render the HTML table here -->
+    </div>
+    <a href="{% url 'upload_file' %}">Upload Another File</a>
+</body>
+</html>
